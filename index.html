@@ -1,16 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Xola Ngece</title>
-</head>
-<body>
-    <header>
-        <h1>Hi! I'm Xola Ngece</h1>
-    </header>
-    <main></main>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xola Ngece</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xola Ngece</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" >About</a></li>
+          <li><a href="#experience" >Experience</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/WhatsApp Image 2022-11-25 at 05.27.03.jpg" alt="Xola Ngece profile picture" class="myImg"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Xola Ngece</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Xola_Ngece_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/xola-ngece-852582258/"><img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            />
+          </a>
+          <a href="https://github.com/x-ngece">
+            <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/my-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Intern @CAPACITI/ABSA <br />Fullstack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Hcert IT:User Support<br />Diploma in IT:Software Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello there! My name is Xola Ngece, a 26-year-old aspiring Software Developer based in the vibrant city of Cape Town, South Africa. With a solid educational background comprising a Higher Certificate in IT User Support and a Diploma in IT with a focus on Software Development, I am passionate about leveraging technology to solve real-world problems.
+            </p>
+            <br>
+            <p>
+              Currently, I am immersing myself in the dynamic world of software development through a Full Stack internship at CAPACITI/ABSA. This invaluable experience allows me to apply my theoretical knowledge in practical settings, honing my skills and expanding my capabilities in building robust and scalable software solutions.
+            </p>
+            <br>
+            <p>
+              Beyond the realm of IT, I find immense joy in exploring new destinations, indulging in fitness activities, conquering hiking trails, immersing myself in the virtual realms of gaming, and cheering on my favorite sports teams. I believe in maintaining a well-rounded lifestyle that nurtures both the mind and body, enabling me to approach challenges with creativity and vigor.
+            </p>
+            <br>
+            <p>
+              With a fervent dedication to continuous learning and growth, I am eager to contribute my passion for technology and problem-solving to impactful projects and collaborations. Feel free to connect with me to discuss opportunities, share insights, or simply swap travel stories over a cup of coffee.
+            </p>
+            <br>
+            <p>
+              Let's embark on this exciting journey of innovation together!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+   
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <a href="https://www.linkedin.com/in/xola-ngece-852582258/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Xola Ngece. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
